@@ -1,0 +1,194 @@
+body
+{
+    background-color: whitesmoke;
+}
+header
+{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: darkgray;
+}
+h2
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+footer
+{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    background-color: darkgray;
+    position: relative;
+    bottom: 0%;
+}
+
+#navigate
+{
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+.menu
+{
+    margin:0%;
+    background-color: black;
+    color: white;
+    position:relative;
+   
+}
+
+.menu ul
+{
+    padding: 0px;
+    display:inline-flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+
+}
+.menu ul li
+{
+    padding: 5px;
+    color: white;
+    width: 230px;
+    margin:25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.menu li:hover
+{
+  background-color: gray;
+}
+
+.submenu
+{
+    display: none;
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background-color: gray;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .submenu ul
+{
+    display: block;
+    margin: 10px;
+}
+
+#CovidCases, #DiabeticCases
+{
+    margin: 40px;
+    white-space: nowrap;
+    display:inline-block;
+    position: relative;
+    /*overflow-x: scroll;*/
+}
+
+.covidimages, .DiabeticCare
+{
+border-radius: 10px;
+margin: 15px;
+width: 300px;
+height: 200px;
+/*border: 2px solid greenyellow;*/
+display: inline-block;
+position: relative;
+}
+
+.Advertisement
+{
+    display:inline-block;
+    /*position: relative;*/
+    border-radius: 10px;
+}
+
+.swiper
+{
+    height: 830px;
+    width: 1430px;
+    height: fit-content;
+    border: 2px solid steelblue;
+   
+}
+
+.swiper-slide img
+{
+    width: 1430px;
+    position: relative;
+}
+.covidimages img
+{
+    width:300px;
+    height:220px;
+    border: 2px steelblue;
+    display: inline-block;
+    align-items: center;
+}
+
+.DiabeticCare img
+{
+    width:300px;
+    height:220px;
+    border:2px steelblue;
+    display: inline-block;
+    align-items: center;
+}
+
+.overlay
+{
+    text-align: center;
+    border: 2px solid blue;
+    background-color: lightblue;
+    width: 297.5px;
+    height: fit-content;
+    margin-top: 10.5%;
+    align-self: auto;
+}   
+
+.overlay:hover
+{
+  background-color:rgb(250, 234, 230);
+  border-color: rgb(0,255,76);
+  cursor: pointer;
+}
+
+.price, .offer
+{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    bottom:0%;
+    margin-top: -12%;
+    margin-left: 2%;
+}
+
+h3
+{
+    border-color: 2px solid blue;
+    background-color: lightblue;
+    margin-bottom: -1%;
+}
+
+#Medicineslayout
+{
+    border-color: 2px solid black;
+    
+}
+

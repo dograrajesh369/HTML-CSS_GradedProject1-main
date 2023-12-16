@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Test</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            h2
+            {
+                text-align: left;
+            }
+            #PatientLabTestForm
+            {
+                width: 800px;
+                height:1000px;
+                top: auto;
+                left:10%;
+                line-height: 50px;
+                border-radius: 10px;
+            }
+            input
+            {
+                height: 30px;
+                width: 45%;
+                padding-left: 10px;
+                border-radius: 8px;
+                text-align: left;
+
+            }
+            .LabTestImage img
+            {
+                border-radius: 2px;
+                width: 630px;
+                height: 1800px;
+            }
+            #rightside, #leftside
+            {
+                display: inline-block;
+            }
+            
+            fieldset
+            {
+                display: inline;
+                border-style: none;
+                text-align: left;
+                padding-right: 30%;
+                
+            }
+            rightside PatientLabTestForm button 
+            {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            #rb
+            {
+                margin-right:50px ;
+            }
+
+        </style>
+    </head>
+        <body>
+                <header>Lab Test Form</header>
+                <section id="navigate">
+                    <nav>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+    
+                                <li><a href="#">Our Medicines</a>
+                                    <div class="submenu">    
+                                        <ul>
+                                                <li><a href="#">Fever</a></li>
+                                                <li><a href="#">Muscle Pain</a></li>
+                                                <li><a href="#">Cold & Cough</a></li>
+                                        </ul>
+                                    </div>
+                                 </li>
+                                
+                                <li><a href="#">Health Care</a>
+                                    <div class="submenu"> 
+                                        <ul>
+                                            <li><a href="#">Baby Care</a></li>
+                                            <li><a href="#">Skin Care</a></li>
+                                            <li><a href="#">Home Care</a></li>
+                                            <li><a href="#">Personal Care</a></li>
+                                            <li><a href="#">Pet Care</a></li>
+                                        </ul>
+                                    </div> 
+                                </li>  
+                                <li><a href="./Lab Test.html">Lab Test</a></li>
+                            </ul> 
+                        </div>
+                    </nav>
+            </section>
+    
+
+            <section id="rightside">
+                <aside id="PatientLabTestForm">
+                    <div>
+                        <h2>Patient Contact Details</h2>
+                            <label for="">Full Name</label>
+                            <br>
+                            <input type="text" placeholder="your Full Name">
+                            <br>
+                            <label for="">Patient Id if exists</label>
+                            <br>
+                            <input type="text" placeholder="your ID">
+                            <br>
+                            <label for="">Contact Number</label>
+                            <br>
+                            <input type="text" placeholder="Mobile Number">
+                            <br>
+                            <label for="">Email Id</label>
+                            <br>
+                            <input type="email" placeholder="email address">
+                            <br>
+                    </div>
+
+                    <div>
+                        <h2>Address</h2>
+                            <label for="House Number">House Number</label>
+                            <br>
+                            <input type="text" placeholder="House Number">
+                            <br>
+                            <label for="Street">Street</label>
+                            <br>
+                            <input type="text" placeholder="Street address">
+                            <br>
+                            <label for="Area">Area</label>
+                            <br>
+                            <input type="text" placeholder="Area">
+                            <br>
+                            <label for="District" id="District">District</label>
+                            <select>
+                                <option value="Choose ">Choose</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                                <option value="Bombay">Bombay</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                            <br>
+                    </div> 
+
+                    <div>
+                        <h2>Choose the Test Type (Check atleast one box without fail)</h2>
+                            <fieldset>
+                                <label><input type="checkbox"  id="CBC" name="CBC"/>CBC</label>
+                                <label><input type="checkbox"  id="Complete Urine" name="Complete Urine"/>Complete Urine</label>
+                                <label><input type="checkbox"  id="Lipid Profile" name="Lipid Profile"/>Lipid Profile</label>
+                                <label><input type="checkbox"  id="Thyroid Stimulating Hormone(TSH)" name="Thyroid Stimulating Hormone(TSH)"/>TSH</label>
+                                <label><input type="checkbox"  id="Glucose Test" name="Glucose Test"/>Glucose Test</label>
+                             </fieldset> 
+                    </div>
+
+                    <div>
+                        <h2>Do you want a hard copy of the report also?</h2>
+                            <div id="rb">
+                                <label><input type="radio" name="radioselection" value="Yes"/>Yes</label>
+                                <label><input type="radio" name="radioselection" value="No" checked/>No</label>    
+                            </div>
+                    </div>
+                    
+                    <div>
+                        <h2>Select Your Comfortable Date and Time</h2>
+                            <label for="date">Date</label>
+                            <input type="date"  id="date" name="date">
+                            <br>
+                            <time>Time</time>
+                            <label for="time">Time</label>
+                            <input type="time"  id="time" name="time">
+                            <br>
+                    </div>
+                    <br>
+                    <button>Reset </button>
+                    <value="Reset"/>
+                    <button>Submit</button>
+                    <value="submit"/>
+                </aside>
+            </section>
+
+            <section id="leftside">
+                <div class="LabTestImage">
+                    <img src="./Images fot HTML Assignment/Images/Lab-Test/lab-test.jpg">
+                </div>
+            </section>
+        </body>
+</html>
